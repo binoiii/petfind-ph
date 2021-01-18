@@ -3,10 +3,10 @@ import BgImage from "./bgimage"
 
 const Hero = () => {
   return (
-    <div className="w-full">
+    <div className="w-full mt-4 sm:mt-8 md:mt-0">
       <BgImage>
         <div className="mt-4 md:mt-0 h-full flex flex-col justify-start items-center">
-          <h1 className="m-4 mb-0 md:mt-8 text-white text-2xl sm:text-3xl md:text-4xl font-secondary">
+          <h1 className="m-4 mb-0 md:mt-8 text-white text-xl sm:text-3xl md:text-4xl font-secondary text-center">
             Help your lost pet <br />
             find it's way home
           </h1>

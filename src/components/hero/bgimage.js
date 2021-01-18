@@ -17,10 +17,9 @@ const BgImage = ({ children }) => {
   `)
 
   const { homeImage } = data
-  console.log(data)
 
   return (
-    <div className="mx-6 sm:mx-10 md:mx-20">
+    <div className="mx-4 sm:mx-8 md:mx-20">
       <BackgroundImage
         atl="pet-owner"
         fluid={homeImage.childImageSharp.fluid}
