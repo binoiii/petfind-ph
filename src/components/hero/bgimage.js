@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, query } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
 import BackgroundImage from "gatsby-background-image"
 
@@ -17,21 +17,14 @@ const BgImage = ({ children }) => {
   `)
 
   const { homeImage } = data
-
-  //   const { homeImage, homeImageMd, homeImageSm } = data
-
-  //   const source = [
-  //     { ...homeImageSm.childImageSharp.fluid },
-  //     { ...homeImageMd.childImageSharp.fluid, media: "(min-width:576px)" },
-  //     { ...homeImage.childImageSharp.fluid, media: "(min-width:768px)" },
-  //   ]
+  console.log(data)
 
   return (
-    <div className="mx-6 sm:mx-10 md:mx-20 border border-gray-200 rounded-lg">
+    <div className="mx-6 sm:mx-10 md:mx-20">
       <BackgroundImage
         atl="pet-owner"
         fluid={homeImage.childImageSharp.fluid}
-        className="h-sm md:h-md"
+        className="h-sm md:h-md rounded-lg overflow-hidden"
       >
         {children}
       </BackgroundImage>
