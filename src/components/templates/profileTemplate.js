@@ -4,19 +4,33 @@ import { graphql } from "gatsby"
 export const query = graphql`
   query($slug: String!) {
     contentfulPetProfile(slug: { eq: $slug }) {
-      slug
       contentful_id
-      animal
+      picture {
+        fluid(maxWidth: 400, quality: 100, cropFocus: CENTER, maxHeight: 400) {
+          base64
+        }
+        petName
+        breed
+        gender
+        food
+        birthday(formatString: "YYYY/MM/DD")
+        food
+        ownerName
+        homeAddress
+        contactInfo1
+        contactInfo2
+        otherInformation
+      }
     }
   }
 `
 
 const ProfileTemplate = ({ data }) => {
-  const { slug, animal } = data.contentfulPetProfile
+  const { petName, ownerName } = data.contentfulPetProfile
   return (
     <div>
-      <h1>{slug}</h1>
-      <h1>{animal}</h1>
+      <h1>{petName}</h1>
+      <h1>{ownerName}</h1>
     </div>
   )
 }
