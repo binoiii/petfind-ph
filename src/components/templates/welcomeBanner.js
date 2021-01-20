@@ -8,7 +8,7 @@ const WelcomeBanner = ({ petName }) => (
     <h1 className="text-2xl sm:text-3xl md:text-4xl tracking-wider">
       Welcome to
       <br />
-      my pet profile
+      my Pet Profile
     </h1>
     <h1 className="mb-4 flex flex-col items-center">
       <span className="mb-4 text-2xl sm:text-3xl md:text-4xl tracking-wider">
