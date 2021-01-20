@@ -9,7 +9,7 @@ const PetDetails = ({
     <div className="mb-6 flex justify-start items-center">
       <Details className="text-2xl sm:text-5xl text-white" />
       <h1 className="ml-4 text-2xl sm:text-3xl font-semibold tracking-widest">
-        Pet's Detail
+        Pet's Details
       </h1>
     </div>
     <ul className="text-lg tracking-wider">
