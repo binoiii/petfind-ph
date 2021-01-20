@@ -1,9 +1,12 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { IconContext } from "react-icons"
+import { FaPaw } from "react-icons/fa"
 import { RiHome5Line } from "react-icons/ri"
 import { AiOutlineUser } from "react-icons/ai"
 import { BiArrowBack } from "react-icons/bi"
+import { BsCardList } from "react-icons/bs"
+import { GrStatusInfo } from "react-icons/gr"
 import { FiFacebook, FiInstagram, FiMail } from "react-icons/fi"
 
 export const Home = ({ className, size }) => (
@@ -91,6 +94,51 @@ BackIcon.defaultProps = {
 }
 
 BackIcon.propTypes = {
+  className: PropTypes.string,
+  size: PropTypes.string,
+}
+
+export const Paw = ({ className, size }) => (
+  <IconContext.Provider value={{ className, size }}>
+    <FaPaw />
+  </IconContext.Provider>
+)
+
+FaPaw.defaultProps = {
+  className: "text-base text-black",
+}
+
+FaPaw.propTypes = {
+  className: PropTypes.string,
+  size: PropTypes.string,
+}
+
+export const Details = ({ className, size }) => (
+  <IconContext.Provider value={{ className, size }}>
+    <BsCardList />
+  </IconContext.Provider>
+)
+
+Details.defaultProps = {
+  className: "text-base text-black",
+}
+
+Details.propTypes = {
+  className: PropTypes.string,
+  size: PropTypes.string,
+}
+
+export const Info = ({ className, size }) => (
+  <IconContext.Provider value={{ className, size }}>
+    <GrStatusInfo />
+  </IconContext.Provider>
+)
+
+Info.defaultProps = {
+  className: "text-base text-black",
+}
+
+Info.propTypes = {
   className: PropTypes.string,
   size: PropTypes.string,
 }
