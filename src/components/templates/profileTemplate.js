@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../layout"
+import SEO from "../seo"
 import WelcomeBanner from "./welcomeBanner"
 import PetImage from "./petImage"
 import OwnerDetails from "./ownerDetails"
