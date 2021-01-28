@@ -11,7 +11,7 @@ const Hero = () => {
             find it's way home
           </h1>
           <div className="mt-6 md:mt-8">
-            <button className="btn border-blue-450 bg-blue-450 text-white tracking-widest shadow-lg transition-colors duration-500 ease-out hover:bg-transparent hover:border-white hover:text-white">
+            <button className="mr-2 btn border-blue-450 bg-blue-450 text-white tracking-widest shadow-lg transition-colors duration-500 ease-out hover:bg-transparent hover:border-white hover:text-white">
               Know more
             </button>
             <button className="btn border-blue-450 bg-transparent text-blue-450 tracking-widest shadow-lg transition-colors duration-500 ease-out hover:bg-transparent hover:border-white hover:text-white">

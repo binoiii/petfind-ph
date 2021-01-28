@@ -6,5 +6,5 @@
 @tailwind utilities;
 
 .btn {
-  @apply py-2 px-2 md:px-6 mr-2 border-2 font-primary text-xs md:text-base rounded-lg cursor-pointer;
+  @apply py-2 px-2 md:px-6 border-2 font-primary text-xs md:text-base rounded-md cursor-pointer;
 }

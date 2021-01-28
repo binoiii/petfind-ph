@@ -7,6 +7,11 @@ import { AiOutlineUser } from "react-icons/ai"
 import { BiArrowBack } from "react-icons/bi"
 import { BsCardList } from "react-icons/bs"
 import { GrStatusInfo } from "react-icons/gr"
+import { ImQrcode } from "react-icons/im"
+import { SiDatadog } from "react-icons/si"
+import { GiReceiveMoney, GiWaterSplash } from "react-icons/gi"
+import { Ri24HoursFill } from "react-icons/ri"
+import { MdLooksOne } from "react-icons/md"
 import { FiFacebook, FiInstagram, FiMail } from "react-icons/fi"
 
 export const Home = ({ className, size }) => (
@@ -139,6 +144,96 @@ Info.defaultProps = {
 }
 
 Info.propTypes = {
+  className: PropTypes.string,
+  size: PropTypes.string,
+}
+
+export const First = ({ className, size }) => (
+  <IconContext.Provider value={{ className, size }}>
+    <MdLooksOne />
+  </IconContext.Provider>
+)
+
+First.defaultProps = {
+  className: "text-base text-black",
+}
+
+First.propTypes = {
+  className: PropTypes.string,
+  size: PropTypes.string,
+}
+
+export const Affordable = ({ className, size }) => (
+  <IconContext.Provider value={{ className, size }}>
+    <GiReceiveMoney />
+  </IconContext.Provider>
+)
+
+Affordable.defaultProps = {
+  className: "text-base text-black",
+}
+
+Affordable.propTypes = {
+  className: PropTypes.string,
+  size: PropTypes.string,
+}
+
+export const QR = ({ className, size }) => (
+  <IconContext.Provider value={{ className, size }}>
+    <ImQrcode />
+  </IconContext.Provider>
+)
+
+ImQrcode.defaultProps = {
+  className: "text-base text-black",
+}
+
+ImQrcode.propTypes = {
+  className: PropTypes.string,
+  size: PropTypes.string,
+}
+
+export const PetProfile = ({ className, size }) => (
+  <IconContext.Provider value={{ className, size }}>
+    <SiDatadog />
+  </IconContext.Provider>
+)
+
+PetProfile.defaultProps = {
+  className: "text-base text-black",
+}
+
+PetProfile.propTypes = {
+  className: PropTypes.string,
+  size: PropTypes.string,
+}
+
+export const AllDay = ({ className, size }) => (
+  <IconContext.Provider value={{ className, size }}>
+    <Ri24HoursFill />
+  </IconContext.Provider>
+)
+
+AllDay.defaultProps = {
+  className: "text-base text-black",
+}
+
+AllDay.propTypes = {
+  className: PropTypes.string,
+  size: PropTypes.string,
+}
+
+export const WaterResitant = ({ className, size }) => (
+  <IconContext.Provider value={{ className, size }}>
+    <GiWaterSplash />
+  </IconContext.Provider>
+)
+
+WaterResitant.defaultProps = {
+  className: "text-base text-black",
+}
+
+WaterResitant.propTypes = {
   className: PropTypes.string,
   size: PropTypes.string,
 }

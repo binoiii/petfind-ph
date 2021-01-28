@@ -64,7 +64,7 @@ const Nav = () => {
             <Link
               className="ml-4 sm:ml-12 md:ml-18 flex items-center text-gray-400 hover:text-gray-700"
               activeClassName="text-gray-700"
-              to="/pet/H4f8QojeeorJIPFmyyFv"
+              to="/about"
             >
               <UserIcon className="mr-2" size="1.4rem" />
               <span className="text-sm hidden md:block">About</span>
@@ -72,7 +72,7 @@ const Nav = () => {
             <Link
               className="ml-4 sm:ml-12 md:ml-18 flex items-center text-gray-400 hover:text-gray-700"
               activeClassName="text-gray-600"
-              to="/pet/H4f8QojeeorJIPFmyyFv"
+              to="/contact"
             >
               <Email className="mr-2" size="1.4rem" />
               <span className="text-sm hidden md:block">Contact</span>
