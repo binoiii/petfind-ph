@@ -7,8 +7,8 @@ const AboutContent = () => (
         Our Team
       </h1>
       <p className="self-center font-primary text-gray-700 text-justify leading-loose">
-        We are simply a group of individuals who have deep concern and care
-        about animals. The functionality of{" "}
+        We are simply a group of individuals who has deep concern and care about
+        animals. The functionality of{" "}
         <span className="font-semibold">
           our product is made with love and concern
         </span>{" "}
@@ -20,7 +20,7 @@ const AboutContent = () => (
         Our Technology
       </h1>
       <p className="font-primary text-gray-700 text-justify leading-loose">
-        PET TAG PH is the{" "}
+        PetfindPH is the{" "}
         <span className="font-semibold">
           first ever provider of QR Code Activated Pet Tags in the Philippines
         </span>

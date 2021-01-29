@@ -33,8 +33,8 @@ const AboutVission = () => {
       </div>
       <div className="col-span-8 md:col-span-4 bg-blue-350 rounded-lg">
         <p className="p-8 md:p-12 self-center text-gray-700 font-primary text-justify leading-loose">
-          A world where every{" "}
-          <span className="font-semibold">pet is happy</span>,{" "}
+          A world where every pet is{" "}
+          <span className="font-semibold">happy</span>,{" "}
           <span className="font-semibold">secured</span>, and{" "}
           <span className="font-semibold">safe</span> in the comfort of their
           home and{" "}

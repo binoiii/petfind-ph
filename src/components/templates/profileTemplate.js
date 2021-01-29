@@ -71,7 +71,7 @@ const ProfileTemplate = ({ data }) => {
   const { petPicture } = data.contentfulPetProfile
 
   return (
-    <Layout>
+    <Layout showSocials={false}>
       <SEO title="Pet Profile" />
       <div className="my-4 sm:my-8 md:mt-0 mx-4 sm:mx-8 md:mx-20 grid grid-cols-8 grid-rows-8 gap-4 md:gap-8">
         <div className="col-span-8 col-span-4">

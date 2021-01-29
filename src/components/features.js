@@ -6,7 +6,7 @@ import {
   PetProfile,
   AllDay,
   WaterResitant,
-} from "../icons"
+} from "./icons"
 
 const Features = () => {
   const features = [
@@ -45,7 +45,7 @@ const Features = () => {
   ]
 
   return (
-    <div className="my-10 md:16 lg:my-20 mx-4 sm:mx-8 md:mx-20">
+    <div className="my-10 md:my-16 lg:my-20 mx-4 sm:mx-8 md:mx-20">
       <h2 className="mb-4 font-secondary text-2xl md:text-3xl text-gray-700 text-center text-shadow-md">
         Product Features
       </h2>

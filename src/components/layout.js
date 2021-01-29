@@ -2,25 +2,33 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import Nav from "./navigation/nav"
+import SocialLinks from "./socialLinks"
+import Footer from "./footer"
+
 import "../styles/global.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, showSocials }) => {
+  console.log(showSocials)
   return (
     <>
       <Nav />
       <main>{children}</main>
-      <footer className="mb-24 md:mb-0 text-center font-primary text-xs text-gray-300">
-        <span className="font-medium">©Petfindph</span>, All rights reserved,
-        2021
-        {/* <br />
-        Powered by: <span className="font-medium">AvioTech Solutions</span> */}
-      </footer>
+      {showSocials && <SocialLinks />}
+      <Footer />
     </>
   )
 }
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+}
+
+Layout.propTypes = {
+  showSocials: PropTypes.bool,
+}
+
+Layout.defaultProps = {
+  showSocials: true,
 }
 
 export default Layout

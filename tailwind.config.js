@@ -34,6 +34,12 @@ module.exports = {
         sm: "24rem",
         md: "32rem",
       },
+      width: {
+        xxs: "10rem",
+        xs: "16rem",
+        sm: "22rem",
+        md: "30rem",
+      },
       fontFamily: {
         primary: ["Montserrat"],
         secondary: ["Chango"],

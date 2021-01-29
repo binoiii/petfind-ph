@@ -3,7 +3,11 @@ import PropTypes from "prop-types"
 import { IconContext } from "react-icons"
 import { FaPaw } from "react-icons/fa"
 import { RiHome5Line } from "react-icons/ri"
-import { AiOutlineUser } from "react-icons/ai"
+import {
+  AiOutlineUser,
+  AiOutlineFacebook,
+  AiOutlineInstagram,
+} from "react-icons/ai"
 import { BiArrowBack } from "react-icons/bi"
 import { BsCardList } from "react-icons/bs"
 import { GrStatusInfo } from "react-icons/gr"
@@ -12,7 +16,7 @@ import { SiDatadog } from "react-icons/si"
 import { GiReceiveMoney, GiWaterSplash } from "react-icons/gi"
 import { Ri24HoursFill } from "react-icons/ri"
 import { MdLooksOne } from "react-icons/md"
-import { FiFacebook, FiInstagram, FiMail } from "react-icons/fi"
+import { FiMail } from "react-icons/fi"
 
 export const Home = ({ className, size }) => (
   <IconContext.Provider value={{ className, size }}>
@@ -60,12 +64,11 @@ Email.propTypes = {
 
 export const Fb = ({ className, size }) => (
   <IconContext.Provider value={{ className, size }}>
-    <FiFacebook />
+    <AiOutlineFacebook />
   </IconContext.Provider>
 )
-
 Fb.defaultProps = {
-  className: "text-sm text-white",
+  className: "text-base text-black",
 }
 
 Fb.propTypes = {
@@ -75,7 +78,7 @@ Fb.propTypes = {
 
 export const Ig = ({ className, size }) => (
   <IconContext.Provider value={{ className, size }}>
-    <FiInstagram />
+    <AiOutlineInstagram />
   </IconContext.Provider>
 )
 

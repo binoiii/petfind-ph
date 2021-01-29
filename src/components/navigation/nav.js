@@ -23,7 +23,7 @@ const Nav = () => {
       }
       companyLogoMd: file(relativePath: { eq: "logo/petfindph-logo2.jpg" }) {
         childImageSharp {
-          fixed(width: 300, quality: 100) {
+          fixed(width: 280, quality: 100) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -48,13 +48,13 @@ const Nav = () => {
   return (
     <div className="flex items-center fixed bottom-0 left-0 right-0 md:static h-24 border-t border-gray-300 bg-white md:border-0 z-10">
       <header className="mx-4 sm:mx-8 md:mx-20 w-full flex justify-between items-center">
-        <div>
+        <div className="hidden md:block">
           <Img alt="petfindph-logo" fixed={source} />
         </div>
         <nav>
           <div className="flex font-primary">
             <Link
-              className="flex items-center text-gray-400 hover:text-gray-700"
+              className="flex items-center text-gray-400 transition duration-300 ease-out hover:text-gray-700"
               activeClassName="text-gray-700"
               to="/pet/H4f8QojeeorJIPFmyyFv"
             >
@@ -62,7 +62,7 @@ const Nav = () => {
               <span className="text-sm hidden md:block">Home</span>
             </Link>
             <Link
-              className="ml-4 sm:ml-12 md:ml-18 flex items-center text-gray-400 hover:text-gray-700"
+              className="ml-10 sm:ml-14 md:ml-12 flex items-center text-gray-400 transition duration-300 ease-out hover:text-gray-700"
               activeClassName="text-gray-700"
               to="/about"
             >
@@ -70,7 +70,7 @@ const Nav = () => {
               <span className="text-sm hidden md:block">About</span>
             </Link>
             <Link
-              className="ml-4 sm:ml-12 md:ml-18 flex items-center text-gray-400 hover:text-gray-700"
+              className="ml-10 sm:ml-14 md:ml-12 md:ml-18 flex items-center text-gray-400 transition duration-300 ease-out hover:text-gray-700"
               activeClassName="text-gray-600"
               to="/contact"
             >

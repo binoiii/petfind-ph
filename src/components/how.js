@@ -61,7 +61,7 @@ const How = () => {
       step: "Find",
       image: findPet,
       header:
-        "3. Finder will scan the Pet QR Code Tag and it will be redirected to your pet's profile",
+        "3. Finder will scan the pet tag and it will be redirected to your pet's profile",
       description:
         "Any one with a smart phone can scan the tag to view your contact details and pet's critical information",
     },
@@ -76,7 +76,7 @@ const How = () => {
   ]
 
   return (
-    <div className="my-10 md:16 lg:my-20 mx-4 sm:mx-8 md:mx-20">
+    <div className="my-10 md:my-16 lg:my-20 mx-4 sm:mx-8 md:mx-20">
       <h2 className="mb-4 font-secondary text-2xl md:text-3xl text-gray-700 text-center text-shadow-md">
         How it Works
       </h2>
@@ -90,15 +90,18 @@ const How = () => {
             header,
             description,
           }) => (
-            <div key={step} className="m-5 w-52 border border-2 rounded-lg">
+            <div
+              key={step}
+              className="m-5 w-xs sm:w-md flex flex-col sm:flex-row border border-2 rounded-lg"
+            >
               <div className="flex justify-center items-center">
                 <Img
                   alt={fluid.originalName}
                   fluid={fluid}
-                  className="w-52 overflow-hidden rounded-t-lg"
+                  className="w-xxs md:w-52 overflow-hidden rounded-t-lg"
                 />
               </div>
-              <div className="p-4 font-primary text-gray-700 text-center">
+              <div className="p-4 flex flex-col items center justify-center font-primary text-gray-700 text-center">
                 <h4 className="p-4 font-semibold text-sm">{header}</h4>
                 <p className="leading-normal tracking-wide text-xs">
                   {description}
