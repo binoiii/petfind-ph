@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import Fade from "react-reveal/Fade"
 
 const How = () => {
   const data = useStaticQuery(graphql`
@@ -82,14 +83,17 @@ const How = () => {
       </h2>
       <div className="flex flex-wrap justify-center">
         {steps.map(
-          ({
-            step,
-            image: {
-              childImageSharp: { fluid },
+          (
+            {
+              step,
+              image: {
+                childImageSharp: { fluid },
+              },
+              header,
+              description,
             },
-            header,
-            description,
-          }) => (
+            i
+          ) => (
             <div
               key={step}
               className="m-5 w-xs sm:w-md flex flex-col sm:flex-row border border-2 rounded-lg"
@@ -101,12 +105,14 @@ const How = () => {
                   className="w-xxs md:w-52 overflow-hidden rounded-t-lg"
                 />
               </div>
-              <div className="p-4 flex flex-col items center justify-center font-primary text-gray-700 text-center">
-                <h4 className="p-4 font-semibold text-sm">{header}</h4>
-                <p className="leading-normal tracking-wide text-xs">
-                  {description}
-                </p>
-              </div>
+              <Fade bottom distance="30px" delay={i * 200}>
+                <div className="p-4 flex flex-col items center justify-center font-primary text-gray-700 text-center">
+                  <h4 className="p-4 font-semibold text-sm">{header}</h4>
+                  <p className="leading-normal tracking-wide text-xs">
+                    {description}
+                  </p>
+                </div>
+              </Fade>
             </div>
           )
         )}

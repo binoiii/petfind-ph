@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import Fade from "react-reveal/Fade"
 
 const Profile = () => {
   const data = useStaticQuery(graphql`
@@ -32,20 +33,24 @@ const Profile = () => {
         Our Pet Profile
       </h2>
       <div className="flex justify-center flex-col sm:flex-row">
-        <div className="m-4 p-8 bg-yellow-450 rounded-lg">
-          <Img
-            alt={laptopImage.childImageSharp.fluid.originalName}
-            fluid={laptopImage.childImageSharp.fluid}
-            className="sm:w-80"
-          />
-        </div>
-        <div className="m-4 p-8 sm:px-14 sm:py-20 md:p-20 bg-gray-100 rounded-lg sm:self-center">
-          <Img
-            alt={mobileImage.childImageSharp.fluid.originalName}
-            fluid={mobileImage.childImageSharp.fluid}
-            className="m-auto sm:m-0 w-12"
-          />
-        </div>
+        <Fade bottom distance="30px" duration={400}>
+          <div className="m-4 p-8 bg-yellow-450 rounded-lg">
+            <Img
+              alt={laptopImage.childImageSharp.fluid.originalName}
+              fluid={laptopImage.childImageSharp.fluid}
+              className="sm:w-80"
+            />
+          </div>
+        </Fade>
+        <Fade bottom distance="30px" duration={800}>
+          <div className="m-4 p-8 sm:px-14 sm:py-20 md:p-20 bg-gray-100 rounded-lg sm:self-center">
+            <Img
+              alt={mobileImage.childImageSharp.fluid.originalName}
+              fluid={mobileImage.childImageSharp.fluid}
+              className="m-auto sm:m-0 w-12"
+            />
+          </div>
+        </Fade>
       </div>
     </div>
   )

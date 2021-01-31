@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
+import Fade from "react-reveal/Fade"
 
 const AboutGoal = () => {
   const data = useStaticQuery(graphql`
@@ -32,19 +33,21 @@ const AboutGoal = () => {
         </BackgroundImage>
       </div>
       <div className="col-span-8 md:col-span-4 bg-yellow-450 rounded-lg">
-        <p className="p-8 md:p-12 self-center text-gray-700 font-primary text-justify leading-loose">
-          <span className="font-semibold">Our goal</span> is to secure and
-          improve the comfort of pets and their owners all over the Philippines
-          by ensuring that{" "}
-          <span className="font-semibold">
-            all pets who have lost their way home
-          </span>{" "}
-          would get an{" "}
-          <span className="font-semibold">
-            opportunity to be reunited to their fur parent
-          </span>{" "}
-          in no time.
-        </p>
+        <Fade bottom distance="30px" delay={400}>
+          <p className="p-8 md:p-12 self-center text-gray-700 font-primary text-justify leading-loose">
+            <span className="font-semibold">Our goal</span> is to secure and
+            improve the comfort of pets and their owners all over the
+            Philippines by ensuring that{" "}
+            <span className="font-semibold">
+              all pets who have lost their way home
+            </span>{" "}
+            would get an{" "}
+            <span className="font-semibold">
+              opportunity to be reunited to their fur parent
+            </span>{" "}
+            in no time.
+          </p>
+        </Fade>
       </div>
     </div>
   )

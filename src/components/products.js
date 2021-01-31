@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import Fade from "react-reveal/Fade"
 
 const Products = () => {
   const data = useStaticQuery(graphql`
@@ -40,36 +41,42 @@ const Products = () => {
         Our Products
       </h2>
       <div className="flex justify-center flex-wrap">
-        <div className="m-4 p-8 bg-red-350 rounded-lg">
-          <Img
-            alt={productOne.childImageSharp.fluid.originalName}
-            fluid={productOne.childImageSharp.fluid}
-            className="w-xxs m-4 rounded-full shadow-md"
-          />
-          <h5 className="mt-8 font-primary text-gray-700 font-semibold text-center tracking-wider">
-            ProductOne
-          </h5>
-        </div>
-        <div className="m-4 p-8 bg-yellow-450 rounded-lg">
-          <Img
-            alt={productTwo.childImageSharp.fluid.originalName}
-            fluid={productTwo.childImageSharp.fluid}
-            className="w-xxs m-4 rounded-full shadow-md"
-          />
-          <h5 className="mt-8 font-primary text-gray-700 font-semibold text-center tracking-wider">
-            ProductOne
-          </h5>
-        </div>
-        <div className="m-4 p-8 bg-blue-350 rounded-lg">
-          <Img
-            alt={productThree.childImageSharp.fluid.originalName}
-            fluid={productThree.childImageSharp.fluid}
-            className="w-xxs m-4 rounded-full shadow-md"
-          />
-          <h5 className="mt-8 font-primary text-gray-700 font-semibold text-center tracking-wider">
-            ProductOne
-          </h5>
-        </div>
+        <Fade bottom distance="30px" delay="300">
+          <div className="m-4 p-8 bg-red-350 rounded-lg">
+            <Img
+              alt={productOne.childImageSharp.fluid.originalName}
+              fluid={productOne.childImageSharp.fluid}
+              className="w-xxs m-4 rounded-full shadow-md"
+            />
+            <h5 className="mt-8 font-primary text-gray-700 font-semibold text-center tracking-wider">
+              ProductOne
+            </h5>
+          </div>
+        </Fade>
+        <Fade bottom distance="30px" delay="600">
+          <div className="m-4 p-8 bg-yellow-450 rounded-lg">
+            <Img
+              alt={productTwo.childImageSharp.fluid.originalName}
+              fluid={productTwo.childImageSharp.fluid}
+              className="w-xxs m-4 rounded-full shadow-md"
+            />
+            <h5 className="mt-8 font-primary text-gray-700 font-semibold text-center tracking-wider">
+              ProductOne
+            </h5>
+          </div>
+        </Fade>
+        <Fade bottom distance="30px" delay="900">
+          <div className="m-4 p-8 bg-blue-350 rounded-lg">
+            <Img
+              alt={productThree.childImageSharp.fluid.originalName}
+              fluid={productThree.childImageSharp.fluid}
+              className="w-xxs m-4 rounded-full shadow-md"
+            />
+            <h5 className="mt-8 font-primary text-gray-700 font-semibold text-center tracking-wider">
+              ProductOne
+            </h5>
+          </div>
+        </Fade>
       </div>
     </div>
   )

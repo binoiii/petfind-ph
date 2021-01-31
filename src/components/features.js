@@ -1,4 +1,6 @@
 import React from "react"
+import Fade from "react-reveal/Fade"
+
 import {
   First,
   Affordable,
@@ -50,7 +52,7 @@ const Features = () => {
         Product Features
       </h2>
       <div className="flex flex-wrap justify-center">
-        {features.map(({ feature, icon, description }) => (
+        {features.map(({ feature, icon, description }, i) => (
           <div
             key={feature}
             className="m-5 md:m-10 w-28 sm:w-40 md:w-56 flex flex-col"
@@ -58,12 +60,14 @@ const Features = () => {
             <div className="mb-8 h-20 md:h-28 w-20 md:w-28 self-center flex justify-center items-center bg-blue-350 shadow-md rounded-full">
               {icon}
             </div>
-            <h4 className="mb-8 font-primary text-gray-700 text-sm md:text-base font-semibold tracking-wider text-center">
-              {feature}
-            </h4>
-            <p className="font-primary text-gray-700 text-sm md:text-base text-center tracking-wide leading-snug">
-              {description}
-            </p>
+            <Fade bottom distance="30px" delay={i * 200}>
+              <h4 className="mb-8 font-primary text-gray-700 text-sm md:text-base font-semibold tracking-wider text-center">
+                {feature}
+              </h4>
+              <p className="font-primary text-gray-700 text-sm md:text-base text-center tracking-wide leading-snug">
+                {description}
+              </p>
+            </Fade>
           </div>
         ))}
       </div>

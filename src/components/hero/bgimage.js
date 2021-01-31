@@ -6,7 +6,7 @@ import BackgroundImage from "gatsby-background-image"
 const BgImage = ({ children }) => {
   const data = useStaticQuery(graphql`
     query {
-      homeImage: file(relativePath: { eq: "bg-image2.jpg" }) {
+      homeImage: file(relativePath: { eq: "bg-image.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1920, quality: 100) {
             ...GatsbyImageSharpFluid
@@ -19,7 +19,7 @@ const BgImage = ({ children }) => {
   const { homeImage } = data
 
   return (
-    <div className="mx-4 sm:mx-8 md:mx-20">
+    <div className="pt-4 sm:pt-8 md:pt-0 mx-4 sm:mx-8 md:mx-20">
       <BackgroundImage
         atl="pet-owner"
         fluid={homeImage.childImageSharp.fluid}

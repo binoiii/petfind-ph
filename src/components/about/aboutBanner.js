@@ -19,7 +19,7 @@ const AboutBanner = () => {
   const aboutImage = data.file.childImageSharp.fluid
 
   return (
-    <div className="overflow-hidden">
+    <div className="pt-4 sm:pt-8 md:pt-0 overflow-hidden">
       <BackgroundImage
         alt={aboutImage.originalName}
         fluid={aboutImage}

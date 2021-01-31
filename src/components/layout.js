@@ -8,7 +8,6 @@ import Footer from "./footer"
 import "../styles/global.css"
 
 const Layout = ({ children, showSocials }) => {
-  console.log(showSocials)
   return (
     <>
       <Nav />

@@ -19,7 +19,7 @@ const ContactBanner = () => {
   const contactImage = data.file.childImageSharp.fluid
 
   return (
-    <div className="overflow-hidden">
+    <div className="mt-4 sm:mt-8 md:mt-0 overflow-hidden">
       <BackgroundImage
         alt={contactImage.originalName}
         fluid={contactImage}

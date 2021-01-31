@@ -17,6 +17,7 @@ import { GiReceiveMoney, GiWaterSplash } from "react-icons/gi"
 import { Ri24HoursFill } from "react-icons/ri"
 import { MdLooksOne } from "react-icons/md"
 import { FiMail } from "react-icons/fi"
+import { IoIosArrowDropup } from "react-icons/io"
 
 export const Home = ({ className, size }) => (
   <IconContext.Provider value={{ className, size }}>

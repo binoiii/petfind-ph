@@ -9,6 +9,8 @@ module.exports = {
     title: `PetfindPH`,
     description: `Help your lost pet find it's way home. Never lost your pet using our QR code tag profiler.`,
     author: `@binoiii`,
+    url: `https://petfind-ph.com`,
+    image: `/images/petfind-ph.jpg`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
