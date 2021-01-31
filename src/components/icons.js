@@ -241,3 +241,18 @@ WaterResitant.propTypes = {
   className: PropTypes.string,
   size: PropTypes.string,
 }
+
+export const BackToTop = ({ className, size }) => (
+  <IconContext.Provider value={{ className, size }}>
+    <IoIosArrowDropup />
+  </IconContext.Provider>
+)
+
+BackToTop.defaultProps = {
+  className: "text-base text-black",
+}
+
+BackToTop.propTypes = {
+  className: PropTypes.string,
+  size: PropTypes.string,
+}

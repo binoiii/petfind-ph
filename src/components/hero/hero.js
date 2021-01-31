@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade"
 
 const Hero = () => {
   return (
-    <div className="w-full mt-16 md:mt-0 mb-10">
+    <div id="hero" className="w-full mt-16 md:mt-0 mb-10">
       <BgImage>
         <Fade bottom distance="30px" delay={300}>
           <div className="mt-4 md:mt-0 h-full flex flex-col justify-start items-center">

@@ -7,7 +7,10 @@ import AboutVission from "./aboutVission"
 
 const AboutUs = () => {
   return (
-    <div className="mt-16 md:mt-0 mb-16 md:mb-16 lg:mb-20 mx-4 sm:mx-8 md:mx-20">
+    <div
+      id="about"
+      className="mt-16 md:mt-0 mb-16 md:mb-16 lg:mb-20 mx-4 sm:mx-8 md:mx-20"
+    >
       <AboutBanner />
       <div className="my-4 md:my-8">
         <AboutContent />

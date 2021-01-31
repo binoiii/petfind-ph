@@ -7,6 +7,7 @@ import Features from "../components/features.js"
 import How from "../components/how.js"
 import Profile from "../components/profile.js"
 import Products from "../components/products.js"
+import BackTop from "../components/utilities/backToTop.js"
 
 const IndexPage = () => (
   <Layout>
@@ -16,6 +17,7 @@ const IndexPage = () => (
     <How />
     <Profile />
     <Products />
+    <BackTop target="hero" />
   </Layout>
 )
 

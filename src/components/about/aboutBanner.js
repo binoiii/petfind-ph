@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import Fade from "react-reveal/Fade"
 import BackgroundImage from "gatsby-background-image"
 
 const AboutBanner = () => {
@@ -25,9 +26,11 @@ const AboutBanner = () => {
         fluid={aboutImage}
         className="h-xs sm:h-sm flex justify-center rounded-lg overflow-hidden"
       >
-        <h1 className="self-center text-4xl sm:text-5xl font-secondary text-white text-center text-shadow-sm">
-          About Us
-        </h1>
+        <Fade bottom distance="30px" delay={300}>
+          <h1 className="self-center text-4xl sm:text-5xl font-secondary text-white text-center text-shadow-sm">
+            About Us
+          </h1>
+        </Fade>
       </BackgroundImage>
     </div>
   )
