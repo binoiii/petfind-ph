@@ -9,12 +9,12 @@ import "../styles/global.css"
 
 const Layout = ({ children, showSocials }) => {
   return (
-    <>
+    <div className="m-auto max-w-screen-xl">
       <Nav />
       <main>{children}</main>
       {showSocials && <SocialLinks />}
       <Footer />
-    </>
+    </div>
   )
 }
 

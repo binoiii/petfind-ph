@@ -33,7 +33,7 @@ const SocialLinks = () => {
           size="1.5rem"
         />
       ),
-      link: "https://www.facebook.com/zionphilippines2020",
+      link: "https://www.facebook.com",
     },
     {
       social: "instagram",
@@ -43,7 +43,7 @@ const SocialLinks = () => {
           size="1.5rem"
         />
       ),
-      link: "https://www.instagram.com/zion_philippines",
+      link: "https://www.instagram.com",
     },
   ]
 

@@ -29,8 +29,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `petfind-ph`,
+        short_name: `petfindph`,
         start_url: `/`,
         background_color: `#fbe260`,
         theme_color: `#fbe260`,

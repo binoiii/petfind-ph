@@ -7,7 +7,7 @@ const BackTop = ({ target }) => {
   return (
     <div>
       <Link to={target} smooth offset={-100}>
-        <BackToTop className="mx-auto my-2 text-lg text-gray-300 transition duration-400 ease-out hover:text-gray-700" />
+        <BackToTop className="mx-auto my-2 text-lg text-gray-400 transition duration-400 ease-out hover:text-gray-700" />
       </Link>
     </div>
   )

@@ -41,7 +41,7 @@ const Products = () => {
         Our Products
       </h2>
       <div className="flex justify-center flex-wrap">
-        <Fade bottom distance="30px" delay="300">
+        <Fade bottom distance="30px" delay={300}>
           <div className="m-4 p-8 bg-red-350 rounded-lg">
             <Img
               alt={productOne.childImageSharp.fluid.originalName}
@@ -53,7 +53,7 @@ const Products = () => {
             </h5>
           </div>
         </Fade>
-        <Fade bottom distance="30px" delay="600">
+        <Fade bottom distance="30px" delay={600}>
           <div className="m-4 p-8 bg-yellow-450 rounded-lg">
             <Img
               alt={productTwo.childImageSharp.fluid.originalName}
@@ -65,7 +65,7 @@ const Products = () => {
             </h5>
           </div>
         </Fade>
-        <Fade bottom distance="30px" delay="900">
+        <Fade bottom distance="30px" delay={900}>
           <div className="m-4 p-8 bg-blue-350 rounded-lg">
             <Img
               alt={productThree.childImageSharp.fluid.originalName}
