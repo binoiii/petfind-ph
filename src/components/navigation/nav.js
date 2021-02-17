@@ -49,7 +49,9 @@ const Nav = () => {
     <div className="flex items-center fixed bottom-0 left-0 right-0 md:static h-16 md:h-24 border-t border-gray-300 bg-white md:border-0 z-10">
       <header className="mx-4 sm:mx-8 md:mx-20 w-full flex justify-between items-center">
         <div className="hidden md:block">
-          <Img alt="petfindph-logo" fixed={source} />
+          <Link to="">
+            <Img alt="petfindph-logo" fixed={source} />
+          </Link>
         </div>
         <nav>
           <div className="flex font-primary">
