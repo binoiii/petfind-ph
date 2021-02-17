@@ -1,4 +1,6 @@
 import React from "react"
+import { Link } from "gatsby"
+import { Link as LinkScroll } from "react-scroll"
 import BgImage from "./bgimage"
 import Fade from "react-reveal/Fade"
 
@@ -14,10 +16,12 @@ const Hero = () => {
             </h1>
             <div className="mt-6 md:mt-8">
               <button className="mr-2 btn border-blue-450 bg-blue-450 text-white tracking-widest shadow-lg transition-colors duration-500 ease-out hover:bg-transparent hover:border-white hover:text-white">
-                Know more
+                <LinkScroll to="features" smooth offset={-50}>
+                  Know more
+                </LinkScroll>
               </button>
               <button className="btn border-blue-450 bg-transparent text-blue-450 tracking-widest shadow-lg transition-colors duration-500 ease-out hover:bg-transparent hover:border-white hover:text-white">
-                Contact us
+                <Link to="/contact">Contact us</Link>
               </button>
             </div>
           </div>
