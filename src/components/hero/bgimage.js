@@ -12,17 +12,23 @@ const BgImage = ({ children }) => {
             ...GatsbyImageSharpFluid
           }
         }
+        name
       }
     }
   `)
 
-  const { homeImage } = data
+  const {
+    homeImage: {
+      childImageSharp: { fluid },
+    },
+    name,
+  } = data
 
   return (
     <div className="pt-4 sm:pt-8 md:pt-0 mx-4 sm:mx-8 md:mx-20">
       <BackgroundImage
-        atl="pet-owner"
-        fluid={homeImage.childImageSharp.fluid}
+        atl={name}
+        fluid={fluid}
         className="h-sm md:h-md rounded-lg overflow-hidden"
       >
         {children}

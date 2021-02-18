@@ -73,7 +73,7 @@ const Nav = () => {
             </Link>
             <Link
               className="ml-10 sm:ml-14 md:ml-12 md:ml-18 flex items-center text-gray-400 transition duration-300 ease-out hover:text-gray-700"
-              activeClassName="text-gray-600"
+              activeClassName="text-gray-700"
               to="/contact"
             >
               <Email className="mr-2" size="1.4rem" />
