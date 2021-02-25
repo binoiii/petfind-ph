@@ -58,7 +58,7 @@ const Nav = () => {
             <Link
               className="flex items-center text-gray-400 transition duration-300 ease-out hover:text-gray-700"
               activeClassName="text-gray-700"
-              to="/pet/H4f8QojeeorJIPFmyyFv"
+              to="/"
             >
               <Home className="mr-1 mb-.5" size="1.5rem" />
               <span className="text-sm hidden md:block">Home</span>
