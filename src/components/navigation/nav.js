@@ -64,7 +64,7 @@ const Nav = () => {
               <span className="text-sm hidden md:block">Home</span>
             </Link>
             <Link
-              className="ml-10 sm:ml-14 md:ml-12 flex items-center text-gray-400 transition duration-300 ease-out hover:text-gray-700"
+              className="ml-12 sm:ml-14 md:ml-12 flex items-center text-gray-400 transition duration-300 ease-out hover:text-gray-700"
               activeClassName="text-gray-700"
               to="/about"
             >
@@ -72,7 +72,7 @@ const Nav = () => {
               <span className="text-sm hidden md:block">About</span>
             </Link>
             <Link
-              className="ml-10 sm:ml-14 md:ml-12 md:ml-18 flex items-center text-gray-400 transition duration-300 ease-out hover:text-gray-700"
+              className="ml-12 sm:ml-14 md:ml-12 md:ml-18 flex items-center text-gray-400 transition duration-300 ease-out hover:text-gray-700"
               activeClassName="text-gray-700"
               to="/contact"
             >
