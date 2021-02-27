@@ -11,7 +11,7 @@ module.exports = {
     sub_description: `Our goal is to secure and improve the comfort of pets and their owners all over the Philippines by ensuring that all pets who have lost their way home would get an opportunity to be reunited to their fur parent in no time.`,
     author: `@binoiii`,
     url: `https://petfind-ph.com`,
-    image: `/images/petfindph-logo-fb.jpg`,
+    image: `/images/petfindph-meta-image.jpg`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
