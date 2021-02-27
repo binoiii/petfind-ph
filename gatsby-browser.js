@@ -1,7 +1,9 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/browser-apis/
- */
+const React = require("react")
+const FBMessenger = require("./src/components/fbmessenger").default
 
-// You can delete this file if you're not using it
+exports.wrapPageElement = ({ element }) => (
+  <React.Fragment>
+    {element}
+    <FBMessenger />
+  </React.Fragment>
+)
