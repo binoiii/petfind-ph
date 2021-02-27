@@ -33,7 +33,7 @@ const SocialLinks = () => {
           size="1.5rem"
         />
       ),
-      link: "https://www.facebook.com",
+      link: "https://www.facebook.com/Pet-Find-PH-103012528511317",
     },
     {
       social: "instagram",

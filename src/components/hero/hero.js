@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Link as LinkScroll } from "react-scroll"
 import BgImage from "./bgimage"
 import Fade from "react-reveal/Fade"
 
@@ -15,12 +14,16 @@ const Hero = () => {
               find it's way home
             </h1>
             <div className="mt-6 md:mt-8">
-              <button className="mr-2 btn border-blue-450 bg-blue-450 text-white tracking-widest shadow-lg transition-colors duration-500 ease-out hover:bg-transparent hover:border-white hover:text-white">
-                <LinkScroll to="features" smooth offset={-50}>
-                  Know more
-                </LinkScroll>
+              <button className="mr-2 btn border-blue-450 bg-blue-450 text-white tracking-widest shadow-lg transition-colors duration-500 ease-out hover:bg-transparent hover:border-white hover:text-white outline-none focus:outline-none">
+                <a
+                  href="https://forms.gle/uWVgKPTXmHEwDQEE6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Activate Tag
+                </a>
               </button>
-              <button className="btn border-blue-450 bg-transparent text-blue-450 tracking-widest shadow-lg transition-colors duration-500 ease-out hover:bg-transparent hover:border-white hover:text-white">
+              <button className="btn border-blue-450 bg-transparent text-blue-450 tracking-widest shadow-lg transition-colors duration-500 ease-out hover:bg-transparent hover:border-white hover:text-white outline-none focus:outline-none">
                 <Link to="/contact">Contact us</Link>
               </button>
             </div>
