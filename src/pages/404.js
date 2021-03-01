@@ -4,9 +4,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo/seo"
 
 const NotFoundPage = () => (
-  <Layout>
+  <Layout footer="fixed">
     <SEO title="404: Not found" />
-
     <div
       className="mt-16 md:mt-0 mb-16 lg:mb-20 mx-4 sm:mx-8 md:mx-20 flex flex-col justify-center"
       style={{ height: "200px" }}

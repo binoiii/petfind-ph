@@ -7,23 +7,21 @@ import Footer from "./footer"
 
 import "../styles/global.css"
 
-const Layout = ({ children, showSocials }) => {
+const Layout = ({ children, showSocials, footer }) => {
   return (
     <div className="m-auto max-w-screen-xl">
       <Nav />
       <main>{children}</main>
       {showSocials && <SocialLinks />}
-      <Footer />
+      <Footer footer={footer} />
     </div>
   )
 }
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
-
-Layout.propTypes = {
   showSocials: PropTypes.bool,
+  footer: PropTypes.string,
 }
 
 Layout.defaultProps = {
