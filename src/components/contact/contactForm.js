@@ -70,7 +70,10 @@ const ContactForm = () => {
         onChange={handleChange}
         required
       ></textarea>
-      <button className="btn self-center sm:self-end lg:self-start w-48 border-yellow-450 bg-yellow-450 text-gray-800 tracking-wide transition-colors duration-500 ease-out hover:bg-white hover:text-gray-700 active:outline-none shadow outline-none focus:outline-none">
+      <button
+        className="btn self-center sm:self-end lg:self-start w-48 border-yellow-450 bg-yellow-450 text-gray-800 tracking-wide transition-colors duration-500 ease-out hover:bg-white hover:text-gray-700 active:outline-none shadow outline-none focus:outline-none"
+        type="submit"
+      >
         Send message
       </button>
     </form>

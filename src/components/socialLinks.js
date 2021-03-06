@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import { Fb, Ig } from "./icons"
+import { Fb } from "./icons"
 
 const SocialLinks = () => {
   const data = useStaticQuery(graphql`
@@ -35,16 +35,16 @@ const SocialLinks = () => {
       ),
       link: "https://www.facebook.com/Pet-Find-PH-103012528511317",
     },
-    {
-      social: "instagram",
-      icon: (
-        <Ig
-          className="text-gray-400 transition duration-300 ease-out hover:text-gray-700"
-          size="1.5rem"
-        />
-      ),
-      link: "https://www.instagram.com",
-    },
+    // {
+    //   social: "instagram",
+    //   icon: (
+    //     <Ig
+    //       className="text-gray-400 transition duration-300 ease-out hover:text-gray-700"
+    //       size="1.5rem"
+    //     />
+    //   ),
+    //   link: "https://www.instagram.com",
+    // },
   ]
 
   return (
