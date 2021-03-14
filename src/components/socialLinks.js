@@ -48,13 +48,13 @@ const SocialLinks = () => {
   ]
 
   return (
-    <div className="px-4 sm:px-8 md:px-0 md:mb-8 h-16 flex items-center justify-between md:block fixed top-0 left-0 right-0 md:static bg-white border-b border-gray-300 md:border-0">
+    <div className="px-4 sm:px-8 md:px-0 md:mb-8 md:mt-8 h-16 flex items-center justify-between md:block fixed top-0 left-0 right-0 md:static bg-white border-b border-gray-300 md:border-0">
       <div className="mt-1 md:ml-0 block md:hidden">
         <Img alt={fixed.originalName} fixed={fixed} />
       </div>
       <div className="text-center">
-        <h5 className="font-primary text-gray-400 font-medium tracking-wider hidden md:block">
-          Follow Us
+        <h5 className="font-primary text-gray-400 text-sm font-medium tracking-wider hidden uppercase md:block">
+          follow us
         </h5>
         <div className="flex justify-center">
           {socials.map(({ social, icon, link }) => (
