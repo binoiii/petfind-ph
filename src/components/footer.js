@@ -1,6 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import { currentYear } from "./utilities/functions"
+
 const Footer = ({ footer }) => (
   <footer
     className={`${
@@ -8,7 +10,8 @@ const Footer = ({ footer }) => (
     } mb-16 md:mb-0 w-full text-center font-primary text-xs text-gray-300`}
   >
     <div>
-      <span className="font-medium">©Petfindph</span>, All rights reserved, 2021
+      <span className="font-medium">©Petfindph</span>, All rights reserved,{" "}
+      {currentYear}
       <br />
       Powered by: <span className="font-medium">AvioTech Solutions</span>
     </div>
@@ -16,7 +19,7 @@ const Footer = ({ footer }) => (
 )
 
 Footer.propTypes = {
-  page: PropTypes.string,
+  footer: PropTypes.string,
 }
 
 export default Footer
