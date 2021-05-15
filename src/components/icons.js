@@ -17,7 +17,8 @@ import { GiReceiveMoney, GiWaterSplash } from "react-icons/gi"
 import { Ri24HoursFill } from "react-icons/ri"
 import { MdLooksOne } from "react-icons/md"
 import { FiMail } from "react-icons/fi"
-import { IoIosArrowDropup } from "react-icons/io"
+import { IoIosArrowDropup } from "react-icons/io" 
+import { FaSearchLocation } from "react-icons/fa"
 
 export const Home = ({ className, size }) => (
   <IconContext.Provider value={{ className, size }}>
@@ -253,6 +254,21 @@ BackToTop.defaultProps = {
 }
 
 BackToTop.propTypes = {
+  className: PropTypes.string,
+  size: PropTypes.string,
+} 
+
+export const Location = ({ className, size }) => (
+  <IconContext.Provider value={{ className, size }}>
+    <FaSearchLocation />
+  </IconContext.Provider>
+)
+
+Location.defaultProps = {
+  className: "text-base text-black",
+}
+
+Location.propTypes = {
   className: PropTypes.string,
   size: PropTypes.string,
 }
