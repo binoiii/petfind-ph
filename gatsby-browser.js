@@ -1,9 +1,9 @@
 const React = require("react")
-// const FBMessenger = require("./src/components/fbmessenger").default
+const FBMessenger = require("./src/components/fbmessenger").default
 
 exports.wrapPageElement = ({ element }) => (
   <React.Fragment>
+    <FBMessenger />
     {element}
-    {/* <FBMessenger /> */}
   </React.Fragment>
 )

@@ -12,10 +12,10 @@ const NotFoundPage = () => (
     >
       <div>
         <h1 className="mb-4 font-secondary text-blue-350 text-3xl md:text-4xl">
-          NOT FOUND :(
+          Pet Information not found.
         </h1>
         <p className="mb-8 font-primary text-sm md:text-base text-gray-700 tracking-wide">
-          You just hit a route that doesn&#39;t exist...
+          The tag might not be activated yet. Please active it on Home.
         </p>
       </div>
       <Link to="/">
