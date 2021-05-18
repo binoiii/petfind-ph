@@ -7,7 +7,8 @@ import {
   QR,
   PetProfile,
   AllDay,
-  WaterResitant,
+  WaterResitant, 
+  Location,
 } from "./icons"
 
 const Features = () => {
@@ -22,6 +23,11 @@ const Features = () => {
       feature: "Smart Pet Technology",
       icon: <QR className="text-4xl md:text-6xl text-white" />,
       description: "Scan pet tag with any smart phone or tablet",
+    }, 
+    {
+      feature: "GPS Notification",
+      icon: <Location className="text-4xl md:text-6xl text-white" />,
+      description: "Owners will receive Instant Email Alert with the GPS location of their Pet after being reported by the Pet Founder.",
     },
     {
       feature: "Affordable",
